@@ -134,7 +134,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text=f"Add {rem} To Your Group",
-            url=f"https://telegram.dog/{@Rem_spbot}?startgroup=true",
+            url=f"https://telegram.dog/{Rem_spbot}?startgroup=true",
         )
     ],
     [
