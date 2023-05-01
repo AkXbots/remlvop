@@ -120,7 +120,7 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/9996ec2eafdef4692102d.jpg) 」────
+────「 [{}](https://telegra.ph/file/0ecc36bf5e0ba468e8a23.jpg) 」────
 *Hola! {},*
 *Meow Meow, Don't Touch Me Without My Permission!*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -133,22 +133,22 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"Add {BOT_NAME} To Your Group",
-            url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
+            text=f"Add {Rɛм ҳ мα𝗇αgɛ💥} To Your Group",
+            url=f"https://telegram.dog/{@Rem_spbot}?startgroup=true",
         )
     ],
     [
         InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
+            text="owner 💸", url="https://t.me/remxowner"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
+            text="🚑 Support", url=f"https://telegram.dog/{xtromxsupport}"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
+            text="📢 Updates", url="https://telegram.dog/xtrom_updates"
         ),
     ],
 ]
@@ -164,7 +164,7 @@ HELP_STRINGS = """
 """
 
 GROUP_START_IMG = (
-    "https://te.legra.ph/file/5f272dc498e4cf91faf92.jpg",
+    "https://te.legra.ph/file/0ecc36bf5e0ba468e8a23.jpg",
     "https://te.legra.ph/file/9d8190aba9ac3421af488.jpg",
     "https://te.legra.ph/file/5b1ce336f0c0216224040.jpg",
     "https://te.legra.ph/file/f1f67047d973f3aea4004.jpg",
