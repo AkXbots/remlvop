@@ -133,7 +133,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"Add {me} To Your Group",
+            text=f"Add {re} To Your Group",
             url=f"https://telegram.dog/{Rem_spbot}?startgroup=true",
         )
     ],
