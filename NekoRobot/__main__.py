@@ -121,13 +121,13 @@ NEKO_STICKERS = (
 
 PM_START_TEXT = """
 ────「 [{}](https://telegra.ph/file/0ecc36bf5e0ba468e8a23.jpg) 」────
-*Hola! {},*
-*Meow Meow, Don't Touch Me Without My Permission!*
+*Ꮋᴏʟᴀ! {},*
+*ᴍᴇᴏᴡ ᴍᴇᴏᴡ, ᴅᴏɴ'ᴛ ᴛᴏᴜᴄʜ ᴍᴇ ᴡɪᴛʜᴏᴜᴛ ᴍʏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ!*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *Users, Across* `{}` *Chats.*
+❍ *ᴜᴘᴛɪᴍᴇ:* `{}`
+❍ `{}` *ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Guidelines Button Below To Know My Abilities ××
+➛ ᴛʀʏ ᴛʜᴇ ɢᴜɪᴅᴇʟɪɴᴇꜱ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇꜱ ××
 """
 
 buttons = [
