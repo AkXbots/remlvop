@@ -38,11 +38,11 @@ from NekoRobot.events import register
 
 edit_time = 5
 """ =======================Neko====================== """
-file1 = "https://telegra.ph/file/cd7aad1ea310312886358.png"
-file2 = "https://telegra.ph/file/48a97320463caa61dba3d.png"
-file3 = "https://telegra.ph/file/2295a7207495eccbbe298.png"
-file4 = "https://telegra.ph/file/67e0bf231a97cd2e364ea.png"
-file5 = "https://telegra.ph/file/990684ecd3d119fa9fec6.png"
+file1 = "https://telegra.ph/file/9cf40b2cb6e4e4a0722a4.jpg"
+file2 = "https://telegra.ph/file/0ecc36bf5e0ba468e8a23.jpg"
+file3 = "https://telegra.ph/file/1e48a9b7477a4dc4eca4e.jpg"
+file4 = "https://telegra.ph/file/92f364767a2158b9e9836.jpg"
+file5 = "https://telegra.ph/file/014960155cd0e2181de95.jpg"
 """ =======================Neko====================== """
 
 START_TIME = datetime.utcnow()
@@ -78,7 +78,7 @@ async def hmm(yes):
     NekoX += f"**♡ Python-telegram-bot Version :** `{ptb}`\n\n"
     NekoX += f"**♡ Telethon Version :** `{tlhver}`\n\n"
     NekoX += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master :** [LovelyPrince](https://t.me/Its_IZ_PRINCE_xD) "
+    NekoX += "**♡ My Master :** [remxmaster](https://t.me/remxowner) "
     NekoX += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [
         [
