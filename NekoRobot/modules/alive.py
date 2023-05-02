@@ -73,13 +73,13 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    NekoX = f"** ♡ Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I'm {BOT_NAME} **\n\n"
-    NekoX += f"**♡ My Uptime :** `{uptime}`\n\n"
-    NekoX += f"**♡ Python-telegram-bot Version :** `{ptb}`\n\n"
-    NekoX += f"**♡ Telethon Version :** `{tlhver}`\n\n"
-    NekoX += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master :** [remxmaster](https://t.me/remxowner) "
-    NekoX += f"Thanks For Adding Me In {yes.chat.title}"
+    NekoX = f"** » ʜᴇʏ [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I'm {BOT_NAME} **\n\n"
+    NekoX += f"**» ᴍʏ ᴜᴘᴛɪᴍᴇ :** `{uptime}`\n\n"
+    NekoX += f"**» ᴘʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ :** `{ptb}`\n\n"
+    NekoX += f"**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{tlhver}`\n\n"
+    NekoX += f"**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀꜱɪᴏɴ :** `{pyrover}`\n\n"
+    NekoX += "**» ᴍʏ ᴍᴀꜱᴛᴇʀ :** [remxmaster](https://t.me/remxowner) "
+    NekoX += f"ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {yes.chat.title}"
     BUTTON = [
         [
             Button.url("【► Help ◄】", f"https://t.me/{BOT_USERNAME}?start=help"),
