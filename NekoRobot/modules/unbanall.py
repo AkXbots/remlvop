@@ -1,4 +1,4 @@
-from AsukaRobot import *
+from remlvop import *
 from NeKoRobot import LOGGER
 from NeKoRobot.events import register
 from telethon.tl.types import ChannelParticipantAdmin
