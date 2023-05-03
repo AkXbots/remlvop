@@ -155,7 +155,7 @@ async for i in telethn.iter_participants(
         else:
             p += 1
 
-    if p == 0:
+   
         await done.edit("No one is muted in this chat")
         return
     required_string = "Successfully unmuted {} users"
