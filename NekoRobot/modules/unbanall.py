@@ -1,6 +1,6 @@
 from AsukaRobot import *
 from AsukaRobot import LOGGER
-from AsukaRobot import register
+from AsukaRobot.events import register
 from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.functions.channels import GetParticipantRequest
