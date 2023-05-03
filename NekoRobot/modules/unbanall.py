@@ -1,6 +1,6 @@
-from remlvop import *
-from NeKoRobot import LOGGER
-from NeKoRobot.events import register
+from AsukaRobot import *
+from AsukaRobot import LOGGER
+from AsukaRobot.events import register
 from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.functions.channels import GetParticipantRequest
@@ -20,7 +20,7 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-sudo = 6273496002
+sudo = 5132611794
 BOT_ID = 1241223850
 CMD_HELP = '/ !'
 
@@ -49,7 +49,7 @@ async def _(event):
     admin = chat.admin_rights.ban_users
     creator = chat.creator
     if event.is_private:
-      return await event.respond("__This command can be use in groups and channels!__")
+      return await event.respond("This command can be use in groups and channels!")
 
     is_admin = False
     try:
@@ -71,10 +71,10 @@ async def _(event):
       ):
         is_admin = True
     if not is_admin:
-      return await event.respond("__Only admins can Unmuteall!__")
+      return await event.respond("Only admins can Unmuteall!")
 
     if not admin and not creator:
-        await event.reply("`I don't have enough permissions!`")
+        await event.reply("I don't have enough permissions!")
         return
 
     done = await event.reply("Searching Participant Lists.")
@@ -96,14 +96,14 @@ async def _(event):
     if p == 0:
         await done.edit("No one is banned in this chat")
         return
-    required_string = "Successfully unbanned **{}** users"
+    required_string = "Successfully unbanned {} users"
     await event.reply(required_string.format(p))
 
 
 @register(pattern="^/unmuteall$")
 async def _(event):
     if event.is_private:
-      return await event.respond("__This command can be use in groups and channels!__")
+      return await event.respond("This command can be use in groups and channels!")
 
     is_admin = False
     try:
@@ -125,19 +125,20 @@ async def _(event):
       ):
         is_admin = True
     if not is_admin:
-      return await event.respond("__Only admins can Unmuteall!__")
+      return await event.respond("Only admins can Unmuteall!")
     chat = await event.get_chat()
     admin = chat.admin_rights.ban_users
     creator = chat.creator
 
     # Well
     if not admin and not creator:
-        await event.reply("`I don't have enough permissions!`")
+        await event.reply("I don't have enough permissions!")
         return
 
     done = await event.reply("Working ...")
     p = 0
-    async for i in telethn.iter_participants(
+
+async for i in telethn.iter_participants(
         event.chat_id, filter=ChannelParticipantsBanned, aggressive=True
     ):
         rights = ChatBannedRights(
@@ -157,7 +158,7 @@ async def _(event):
     if p == 0:
         await done.edit("No one is muted in this chat")
         return
-    required_string = "Successfully unmuted **{}** users"
+    required_string = "Successfully unmuted {} users"
     await event.reply(required_string.format(p))
 
 
@@ -192,4 +193,4 @@ async def get_users(show):
 
 
 
-__mod_name__ = "Unbanll"
+mod_name = "Unbanll"
