@@ -23,7 +23,7 @@ SOFTWARE.
 """
 ## thanks to Moezilla (Pranav) for this awesome code
 import asyncio
-from Himawari.utils.permissions import adminsOnly
+from NeKoRobot.utils.permissions import adminsOnly
 from Himawari import pgram as app, OWNER_ID, db
 from Himawari.utils.errors import capture_err
 from Himawari.modules.mongo.karma_mongo import (
