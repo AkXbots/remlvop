@@ -25,11 +25,11 @@ import re
 
 from pyrogram import filters
 
-from nezuko import app
-from nezuko.core.decorators.errors import capture_err
-from nezuko.core.decorators.permissions import adminsOnly
-from nezuko.core.sections import section
-from nezuko.utils.dbfunctions import (
+from NekoRobot import app
+from NekoRobot.core.decorators.errors import capture_err
+from NekoRobot.core.decorators.permissions import adminsOnly
+from NekoRobot.core.sections import section
+from NekoRobot.utils.dbfunctions import (
     alpha_to_int,
     get_karma,
     get_karmas,
