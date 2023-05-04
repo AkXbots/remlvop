@@ -48,4 +48,4 @@ dispatcher.add_handler(WRITE_HANDLER)
 
 __mod_name__ = "WʀɪᴛᴇTᴏᴏʟ"
 __command_list__ = ["write"]
-__handlers__ = [WRITE_HANDLER
+__handlers__ = [WRITE_HANDLER]
