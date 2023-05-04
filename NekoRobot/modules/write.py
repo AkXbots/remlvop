@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from Himawari.events import register
+from NeKoRobot.events import register
 from io import BytesIO
 from requests import get
 from telethon import events
