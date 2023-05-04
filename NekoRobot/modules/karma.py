@@ -25,7 +25,7 @@ import re
 
 from pyrogram import filters
 
-from telegram import app
+from TheHamkerCat import app
 from NekoRobot.core.decorators.errors import capture_err
 from NekoRobot.core.decorators.permissions import adminsOnly
 from NekoRobot.core.sections import section
