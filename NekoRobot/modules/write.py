@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from NekoRobot import pbot
+
 
 
 @pbot.on_message(filters.command("write"))
