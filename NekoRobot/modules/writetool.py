@@ -44,7 +44,7 @@ __help__ = """
 
 WRITE_HANDLER = DisableAbleCommandHandler("write", handwrite)
 
-dispatcher.add_handler(WRITE_HANDLER)
+NEKO_PTB.add_handler(WRITE_HANDLER)
 
 __mod_name__ = "WʀɪᴛᴇTᴏᴏʟ"
 __command_list__ = ["write"]
