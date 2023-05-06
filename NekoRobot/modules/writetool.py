@@ -3,8 +3,8 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 from telegram.ext import CallbackContext
 from telegram.ext.dispatcher import run_async
 
-from FallenRobot import BOT_NAME, BOT_USERNAME, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from NeKoRobot import BOT_NAME, BOT_USERNAME, dispatcher
+from NeKoRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -21,7 +21,7 @@ def handwrite(update: Update, context: CallbackContext):
         caption=f"""
 Successfully Written Text 💘
 
-✨ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+✨ **Written By :** [{ʀᴇᴍ}](https://t.me/{Rem_spbot})
 🥀 **Requested by :** {update.effective_user.first_name}
 ❄ **Link :** `{req}`""",
         parse_mode=ParseMode.MARKDOWN,
