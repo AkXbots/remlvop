@@ -2,7 +2,7 @@ import speedtest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
-from NekoRobot import DEV_USERS, dispatcher
+from NekoRobot import DEV_USERS, NEKO_PTB
 from NekoRobot.modules.disable import DisableAbleCommandHandler
 from NekoRobot.modules.helper_funcs.chat_status import dev_plus
 
@@ -57,8 +57,8 @@ SPEED_TEST_CALLBACKHANDLER = CallbackQueryHandler(
     speedtestxyz_callback, pattern="speedtest_.*"
 )
 
-dispatcher.add_handler(SPEED_TEST_HANDLER)
-dispatcher.add_handler(SPEED_TEST_CALLBACKHANDLER)
+NEKO_PTB.add_handler(SPEED_TEST_HANDLER)
+NEKO_PTB.add_handler(SPEED_TEST_CALLBACKHANDLER)
 
 help = """
 » /speedtest *:* Runs a speedtest and check the server speed.
