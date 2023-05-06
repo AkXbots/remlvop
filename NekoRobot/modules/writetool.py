@@ -3,8 +3,8 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 from telegram.ext import CallbackContext
 from telegram.ext.dispatcher import run_async
 
-from @Rem_spbot import BOT_NAME, BOT_USERNAME, dispatcher
-from @Rem_spbot.modules.disable import DisableAbleCommandHandler
+from fallenrobot import BOT_NAME, BOT_USERNAME, dispatcher
+from fallenrobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
