@@ -5,7 +5,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 
 from NekoRobot import pgram
-from fallenRobot.utils.mongo import get_couple, save_couple
+from NekoRobot.utils.mongo import get_couple, save_couple
 
 
 # Date and time
