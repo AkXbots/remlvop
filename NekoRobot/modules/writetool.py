@@ -42,7 +42,7 @@ __help__ = """
 ❍ /write <text> *:* Writes the given text.
 """
 
-WRITE_HANDLER = DisableAbleCommandHandler("write", handwrite)
+
 
 dispatcher.add_handler(WRITE_HANDLER)
 
