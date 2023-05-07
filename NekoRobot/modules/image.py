@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from search_engine_parser import GoogleSearch
 
-from NekoRobot import tbot as Neko
+from NekoRobot import tbot as neko
 from NekoRobot.events import register as bot
 
 opener = urllib.request.build_opener()
