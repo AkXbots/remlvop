@@ -6,7 +6,7 @@ from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
-from NekoRobot import dispatcher
+from NekoRobot import NEKO_PTB
 from NekoRobot.modules.disable import ( DisableAbleCommandHandler, DisableAbleMessageHandler )
 from NekoRobot.modules.sql.redis import start_afk, end_afk, is_user_afk, afk_reason
 from NekoRobot import REDIS
