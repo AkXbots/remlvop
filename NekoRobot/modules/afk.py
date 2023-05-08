@@ -127,7 +127,7 @@ def check_afk(update, context, user_id, fst_name, userc_id):
 
 if int(userc_id) == int(user_id):
             return
-        if not user.reason:
+        
             res = f"{fst_name} is afk"
             update.effective_message.reply_text(res)
         else:
