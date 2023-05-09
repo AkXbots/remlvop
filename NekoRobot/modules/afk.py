@@ -7,7 +7,7 @@ from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
 from NekoRobot import NEKO_PTB
-from NekoRobot.modules.disable import ( DisableAbleCommandHandler, DisableAbleRegexHandler )
+from NekoRobot.modules.disable import ( DisableAbleCommandHandler, DisableAbleMessageHandler )
 from NekoRobot.modules.sql import afk_sql as sql
 from NekoRobot.modules.users import get_user_id
 
