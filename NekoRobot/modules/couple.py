@@ -4,7 +4,7 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.enums import ChatType
 
-from NekoRobot import pbot
+from NekoRobot import pgram
 from NekoRobot.utils.mongo import get_couple, save_couple
 
 
