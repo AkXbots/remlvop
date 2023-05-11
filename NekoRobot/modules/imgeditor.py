@@ -33,7 +33,7 @@ from pyrogram.types import (
 from NekoRobot import BOT_NAME
 
 # By @TroJanzHEX
-from Himawari.utils.resources.ImageEditor.edit_1 import (  # pylint:disable=import-error
+from NekoRobot.utils.resources.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
