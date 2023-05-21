@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from search_engine_parser import GoogleSearch
 
-from NekoRobot import telethn as tbot
+from NekoRobot import telethon as tbot
 from NekoRobot.events import register
 
 opener = urllib.request.build_opener()
