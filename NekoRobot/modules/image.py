@@ -126,7 +126,7 @@ async def okgoogle(img):
 
 if guess and imgspage:
             await dev.edit(f"[{guess}]({fetchUrl})\n\nLooking for this Image...")
-        else:
+        
             await dev.edit("Can't find this piece of shit.")
             return
 
