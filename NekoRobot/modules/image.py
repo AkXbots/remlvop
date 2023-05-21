@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from search_engine_parser import GoogleSearch
 
-from NekoRobot import tbot as neko
+from NekoRobot import tbot as Neko
 from NekoRobot.events import register as bot
 
 opener = urllib.request.build_opener()
@@ -42,11 +42,11 @@ async def _(event):
             title = gresults["titles"][i]
             link = gresults["links"][i]
             desc = gresults["descriptions"][i]
-            msg += f"❍[{title}]({link})\n**{desc}**\n\n"
+            msg += f"❍[{title}]({link})\n{desc}\n\n"
         except IndexError:
             break
     await webevent.edit(
-        "**Search Query:**\n`" + match + "`\n\n**Results:**\n" + msg, link_preview=False
+        "Search Query:\n" + match + "\n\nResults:\n" + msg, link_preview=False
     )
 
 
@@ -91,15 +91,15 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await tbot.download_media(message, photo)
     else:
-        await img.reply("`Reply to photo or sticker nigger.`")
+        await img.reply("Reply to photo or sticker nigger.")
         return
 
     if photo:
-        dev = await img.reply("`Processing...`")
+        dev = await img.reply("Processing...")
         try:
             image = Image.open(photo)
         except OSError:
-            await dev.edit("`Unsupported sexuality, most likely.`")
+            await dev.edit("Unsupported sexuality, most likely.")
             return
         name = "okgoogle.png"
         image.save(name, "PNG")
@@ -112,11 +112,11 @@ async def okgoogle(img):
 
         if response != 400:
             await dev.edit(
-                "`Image successfully uploaded to Google. Maybe.`"
-                "\n`Parsing source now. Maybe.`"
+                "Image successfully uploaded to Google. Maybe."
+                "\nParsing source now. Maybe."
             )
         else:
-            await dev.edit("`Google told me to fuck off.`")
+            await dev.edit("Google told me to fuck off.")
             return
 
         os.remove(name)
@@ -124,10 +124,10 @@ async def okgoogle(img):
         guess = match["best_guess"]
         imgspage = match["similar_images"]
 
-        if guess and imgspage:
-            await dev.edit(f"[{guess}]({fetchUrl})\n\n`Looking for this Image...`")
+if guess and imgspage:
+            await dev.edit(f"[{guess}]({fetchUrl})\n\nLooking for this Image...")
         else:
-            await dev.edit("`Can't find this piece of shit.`")
+            await dev.edit("Can't find this piece of shit.")
             return
 
         if img.pattern_match.group(1):
@@ -196,9 +196,9 @@ async def scam(results, lim):
     return imglinks
 
 
-__mod_name__ = "Iᴍᴀɢᴇ"
+mod_name = "IMAGE"
 
-__help__ = """
+help = """
  ❍ /google <text>*:* Perform a google search
- ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+ ❍ /img <text>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: /img hello lim=10
 """
