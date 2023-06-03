@@ -11,7 +11,7 @@ from NekoRobot import pgram
 #ADD ANY BUTTON YOU WANT BELOW YOUR WELCOME IMAGE
 markup=InlineKeyboardMarkup ([[InlineKeyboardButton ("MODS", url="https://t.me/xd_bot_updates")]])
 
-@app.on_message(filters.new_chat_members & filters.group)
+@pgram.on_message(filters.new_chat_members & filters.group)
 async def welcomepic(_, message):
 
     for u in message.new_chat_members:
