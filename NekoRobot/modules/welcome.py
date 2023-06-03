@@ -9,15 +9,15 @@ from pyrogram.enums import *
 from NekoRobot import pgram
 
 #ADD ANY BUTTON YOU WANT BELOW YOUR WELCOME IMAGE
-markup=InlineKeyboardMarkup ([[InlineKeyboardButton ("MODS", url="https://t.me/NovaXMod")]])
+markup=InlineKeyboardMarkup ([[InlineKeyboardButton ("MODS", url="https://t.me/xd_bot_updates")]])
 
-@pbot.on_message(filters.new_chat_members & filters.group)
+@app.on_message(filters.new_chat_members & filters.group)
 async def welcomepic(_, message):
 
     for u in message.new_chat_members:
         MSG = f"""
 **WELCOME TO {message.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖➖
+×⋆──────────────⋆×✧
 NAME: {u.mention}
 ID: {u.id}
 USERNAME: @{u.username}
